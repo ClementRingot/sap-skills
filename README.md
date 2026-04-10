@@ -1,6 +1,6 @@
-# SAP RAP Skills
+# SAP Skills
 
-A collection of AI coding assistant skills for SAP RAP (RESTful ABAP Programming Model) development. Each skill is a standalone `SKILL.md` file that can be used independently.
+A collection of AI coding assistant skills for SAP development (RAP, Fiori Elements, SAPUI5, Clean Core, ABAP Cloud). Each skill is a standalone `SKILL.md` file that can be used independently.
 
 ## Skills
 
@@ -13,15 +13,17 @@ A collection of AI coding assistant skills for SAP RAP (RESTful ABAP Programming
 | [atc-checks](atc-checks/SKILL.md) | ATC check execution, result interpretation, and structured correction loop |
 | [sap-reviewer](sap-reviewer/SKILL.md) | Adversarial code review checklist for RAP / ABAP Cloud projects |
 | [sap-released-objects](sap-released-objects/SKILL.md) | Query the SAP Cloudification Repository for object release status and successors |
+| [sapui5-review](sapui5-review/SKILL.md) | SAPUI5 & Fiori Elements UI code reviewer (XML views, controllers, manifest, OData V4 bindings, FPM) |
 | [sap-rap-orchestrator](sap-rap-orchestrator/SKILL.md) | Orchestrator that ties all skills together into a recommended workflow |
 
 ## Recommended Workflow
 
 ```
 1. Generate RAP / Fiori code  (rap-business-object, fiori-elements)
-2. Review with checklist       (sap-reviewer)
-3. Generate unit tests         (abap-unit-tests)
-4. Run ATC checks              (atc-checks)
+2. Review backend code         (sap-reviewer)
+3. Review UI code              (sapui5-review)
+4. Generate unit tests         (abap-unit-tests)
+5. Run ATC checks              (atc-checks)
 ```
 
 ## Usage
